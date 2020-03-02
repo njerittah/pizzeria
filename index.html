@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+    <title>Pizza Order</title>
+  </head>
+  <body>
+
+    <div class="fullscreen">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        <source src="img/pizza.mp4" type="video/webm">
+        <source src="img/pizza.mp4" type="video/mp4">
+        <source src="img/pizza.mp4" type="video/ogg">
+
+    </video>
+    <div class="container">
+    <p>Select Pizza Size</p>
+    <form>
+    XL($100) <input type="radio" name="size" value="100" id="XL"/>
+    Large($80) <input type="radio" name="size" value="80" id="Large"/>
+    Medium($60)  <input type="radio" name="size" value="60" id="Medium">
+    Small($40) <input type="radio" name="size" value="40" id="Small">
+      <p>Select Crust</p>
+    Thin ($10) <input type="checkbox" name="crust" value="10">
+    Flatbread ($10) <input type="checkbox" name="crust" value="10">
+    Foccacia($10)  <input type="checkbox" name="crust" value="10">
+    Custom($10)   <input type="checkbox" name="crust" value="10">
+    Gluten Free($10)  <input type="checkbox" name="crust" value="10">
+      <p>Select Topping</p>
+    Pepperoni($20)  <input type="checkbox" name="Topping" value="20">
+    Mushrooms($20) <input type="checkbox" name="Topping" value="20">
+    Onions($20)  <input type="checkbox" name="Topping" value="20">
+    Sausage($20) <input type="checkbox" name="Topping" value="20">
+    Bacon($20) <input type="checkbox" name="Topping" value="20">
+    Black Olives($20)  <input type="checkbox" name="Topping" value="blackolives">
+    Green Peppers($20)  <input type="checkbox" name="Topping" value="greenpeppers">
+    <p>How many pizzas do you want?</p>
+    Number of Pizzas <input type="number" id="number">
+    <p>Do you want the pizza delivered at your place?</p>
+  Yes <input type="radio" name="delivery" value="yes" id="yes">
+  No <input type="radio" name="delivery" value="No" id="no">
+  <br>
+  <input type="submit" name="" value="submit">
+
+    </form>
+    <p id="tt">you have ordered pizza, crust and toppings</p>
+    <p id="mm"></p>
+  </div>
+    <script src="js/script.js">
+    </script>
+  </body>
+</html>
